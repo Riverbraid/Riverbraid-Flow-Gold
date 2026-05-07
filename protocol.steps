@@ -1,0 +1,33 @@
+{
+  "schema": "riverbraid.gold.protocol.steps",
+  "version": "1.0.0",
+  "repo": "Riverbraid-Flow-Gold",
+  "ring": 1,
+  "petal": "Flow-Gold",
+  "invariant": "FLOW_STATIONARY",
+  "claim_boundary": "declared-conditions-only",
+  "canonical_input": {
+    "repo": "Riverbraid-Flow-Gold",
+    "petal": "Flow-Gold",
+    "ring": 1,
+    "invariant": "FLOW_STATIONARY"
+  },
+  "expected_result": true,
+  "steps": [
+    "receive canonical stationarity object",
+    "require repo to equal Riverbraid-Flow-Gold",
+    "require petal to equal Flow-Gold",
+    "require ring to equal 1",
+    "require invariant to equal FLOW_STATIONARY",
+    "emit deterministic verification output"
+  ],
+  "forbidden": [
+    "Date",
+    "Math.random",
+    "randomUUID",
+    "timestamps",
+    "absolute paths",
+    "environment dependent values",
+    "external lookups"
+  ]
+}
